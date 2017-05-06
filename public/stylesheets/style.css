@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#color-game-app {
+  width: 33%;
+  margin-left:33%;
+  margin-right:33%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#winner {
+  width:100%;
+  text-align: center;
+}
+#winner h4 {
+  text-align: center;
+}
+
+#color-choices {
+  display:flex;
+}

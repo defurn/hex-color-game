@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- won;t load script -->
+    <script src="./color-game.js"></script>
+
+  </head>
+
+  <body onload="setBoard()">
+    <div id="color-game-app" >
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <div id="winner"><h4>winner goes here</h4></div>
+      <select id="difficulty" onchange="setBoard()">
+        <option value="3"selected>Easy</option>
+        <option value="5" >Medium</option>
+        <option value="7">Hard</option>
+      </select>
+      <button onclick="setBoard(4)">reset</button>
+      <div id="color-choices"></div>
+    </div>
+
+  </body>
+</html>
+<div
