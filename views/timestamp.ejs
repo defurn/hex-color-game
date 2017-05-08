@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+
+  <body>
+
+    <h1>timestamp microservice</h1>
+      <h3>pass a string as a URI parameter, timestamp will return a JSON with a matching Unix timestamp and a natural date if a date is present in the string</h3>
+      <p>for example:</p>
+      <code>https://color-game-knockoff.herokuapp.com/timestamp/December%2015,%202015</code>
+      <p>or</p>
+      <code>
+https://color-gae-knockoff.herokuapp.com/timestamp/1450137600</code>
+      <p>returns:</p>
+      <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
+
+
+  </body>
