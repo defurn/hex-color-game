@@ -26,6 +26,7 @@ function setBoard(){
 function createColorBox(hex){
   let colorElement = document.createElement('div')
   colorElement.setAttribute("id", hex);
+  colorElement.setAttribute("class","colorCube")
   colorElement.setAttribute("style", `background-color:${hex}; width:50px; height:50px; margin:auto;`)
   colorElement.addEventListener('click',() => {checkWinner(hex)});
   colorPieces.push(hex)

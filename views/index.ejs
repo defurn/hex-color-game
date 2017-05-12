@@ -3,6 +3,7 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
     <script src="/javascripts/color-game.js"></script>
 
   </head>
@@ -11,13 +12,16 @@
     <div id="color-game-app" >
       <h1><%= title %></h1>
       <p>Welcome to <%= title %></p>
+      <p>pick the color that matches the hex value</p>
       <div id="winner"><h4>winner goes here</h4></div>
-      <select id="difficulty" onchange="setBoard()">
+      <span id="controls">
+      <select id="difficulty" class="btn" onchange="setBoard()">
         <option value="3"selected>Easy</option>
         <option value="5" >Medium</option>
         <option value="7">Hard</option>
       </select>
-      <button onclick="setBoard(4)">reset</button>
+      <button id="reset" class="btn" onclick="setBoard(4)">reset</button>
+    </span>
       <div id="color-choices"></div>
     </div>
 

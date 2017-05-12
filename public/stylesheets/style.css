@@ -20,11 +20,32 @@ a {
 #winner {
   width:100%;
   text-align: center;
+  margin: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 #winner h4 {
   text-align: center;
 }
 
 #color-choices {
   display:flex;
+}
+
+/*#difficulty {
+  width: 25%;
+}
+
+#reset {
+  width: 25%;
+}*/
+
+#controls {
+  padding:10px;
+}
+
+.colorCube {
+  border-radius:5%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
