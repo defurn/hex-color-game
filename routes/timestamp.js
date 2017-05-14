@@ -30,7 +30,6 @@ var timestampDecode = (uri) => {
 }
 
 router.get('/', function(req, res, next) {
-  console.log('here')
   res.render('timestamp', { title: 'timestampAPI' });
 });
 
