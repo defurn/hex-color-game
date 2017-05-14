@@ -11,10 +11,24 @@
 <div>
     <h1><%= title %></h1>
       <h3>pass a string as a URI parameter, images will return a json</h3>
+      <h4>optional: offset, limit (default is offset=1, limit=10)</h4>
       <p>for example:</p>
-      <code>https://color-game-knockoff.herokuapp.com/images/cats+dogs</code>
-      <p>returns:</p>
-      <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
+      <code>https://color-game-knockoff.herokuapp.com/images/cats%20dogs?offset=5&limit=2</code>
+      <p>returns an array of objects:</p>
+      <code>[<br>
+  {<br>
+    "title": "Dogs Looking for Homes | Leigh Dogs and Cats Home",
+    "snippet": "The dog that has been with us for the longest time! Could she be the one for you? \n'Abi' 2 year old staff type bitch. Came to the Home as a stray in December last ...",<br>
+    "url": "http://www.leighdogsandcatshome.co.uk/wp-content/uploads/2015/11/Roxy-10-11yrs.jpg",<br>
+    "context": "http://www.leighdogsandcatshome.co.uk/rehoming/dogs-looking-for-homes/"
+  },<br>
+  {<br>
+    "title": "Cats and dogs are equally intelligent, new research reveals",<br>
+    "snippet": "Jan 25, 2017 ... It is a question that for centuries dog lovers and cat lovers have fought over like, \nwell, cats and dogs: which animal is more intelligent?",<br>
+    "url": "http://www.telegraph.co.uk/content/dam/news/2017/01/25/JS114779665_wwwAlamycom_Cats-and-Dogs-xlarge_trans_NvBQzQNjv4Bqn2n2hk5qKEJ--A9z8HbLAhS03i2pzHkxg356GvlPLeE.jpg",<br>
+    "context": "http://www.telegraph.co.uk/news/2017/01/25/cats-dogs-equally-intelligent-new-research/"<br>
+  }<br>
+]</code>
 </div>
 
   </body>
