@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+
+  <body>
+
+<div>
+    <h1><%= title %></h1>
+      <h3>submit a file and see its size</h3>
+      <h4>use the form, server will return json object with submitted file's size as a string</h4>
+      <p> for example, file size in bytes: </p>
+      <code>{ "filesize": "3824190 bytes" }</code>
+</div>
+<div style="padding:10px;">
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file">
+    <input type="submit">
+  </form>
+</div>
+  </body>
