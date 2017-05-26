@@ -12,6 +12,9 @@ var users = require('./routes/users');
 var timestamp = require('./routes/timestamp');
 var images = require('./routes/images');
 var filesize = require('./routes/filesize');
+var colorgame = require('./routes/color-game');
+var whoami = require('./routes/whoami');
+var genericMongo = require('./routes/genericMongo')
 
 var app = express();
 
@@ -31,6 +34,9 @@ app.use('/users', users);
 app.use('/timestamp', timestamp);
 app.use('/images', images);
 app.use('/filesize', filesize);
+app.use('/colorgame', colorgame);
+app.use('/whoami', whoami);
+app.use('/genericMongo', genericMongo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

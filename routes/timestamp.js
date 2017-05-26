@@ -29,11 +29,11 @@ var timestampDecode = (uri) => {
   return {"unix": unixDate, "natural": naturalDate}
 }
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('timestamp', { title: 'timestampAPI' });
 });
 
-router.get('/:string', function(req, res, next) {
+router.get('/:string', function(req, res) {
   let dateString = req.params.string
   let response = timestampDecode(dateString)
   res.json(response)

@@ -4,26 +4,22 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <script src="/javascripts/color-game.js"></script>
+    <script src="/javascripts/index.js"></script>
 
   </head>
-
-  <body onload="setBoard()">
-    <div id="color-game-app" >
+    <div id="projectsList">
       <h1><%= title %></h1>
-      <p>Welcome to <%= title %></p>
-      <p>pick the color that matches the hex value</p>
-      <div id="winner"><h4>winner goes here</h4></div>
-      <span id="controls">
-      <select id="difficulty" class="btn" onchange="setBoard()">
-        <option value="3"selected>Easy</option>
-        <option value="5" >Medium</option>
-        <option value="7">Hard</option>
-      </select>
-      <button id="reset" class="btn" onclick="setBoard(4)">reset</button>
-    </span>
-      <div id="color-choices"></div>
+      <h3>backend/fullstack projects</h3>
+      <ul>
+        <% apps = apps.apps;
+          for (var i = 0; i < apps.length; i++){
+            let url = path + apps[i].route %>
+            <li><a href="<%= url %>"</a> <%= apps[i].title %> </li>
+
+          <% } %>
+      </ul>
     </div>
+
 
   </body>
 </html>
