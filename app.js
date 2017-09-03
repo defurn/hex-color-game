@@ -14,7 +14,8 @@ var images = require('./routes/images');
 var filesize = require('./routes/filesize');
 var colorgame = require('./routes/color-game');
 var whoami = require('./routes/whoami');
-var genericMongo = require('./routes/genericMongo')
+var genericMongo = require('./routes/genericMongo');
+var simonGame = require('./routes/simonGame')
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use('/filesize', filesize);
 app.use('/colorgame', colorgame);
 app.use('/whoami', whoami);
 app.use('/genericMongo', genericMongo);
+app.use('/simonGame', simonGame);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

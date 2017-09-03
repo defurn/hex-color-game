@@ -22,7 +22,10 @@ let apps = [
   {
     title: "generic MongoDB form",
     route: "genericMongo"
-
+  },
+  {
+    title: "Simon Game",
+    route: "simonGame"
   }
 ]
 
