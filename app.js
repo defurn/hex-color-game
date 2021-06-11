@@ -16,6 +16,7 @@ var colorgame = require('./routes/color-game');
 var whoami = require('./routes/whoami');
 var genericMongo = require('./routes/genericMongo');
 var simonGame = require('./routes/simonGame')
+var poll = require('./routes/poll')
 
 var app = express();
 
@@ -39,6 +40,7 @@ app.use('/colorgame', colorgame);
 app.use('/whoami', whoami);
 app.use('/genericMongo', genericMongo);
 app.use('/simonGame', simonGame);
+app.use('/poll', poll);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
